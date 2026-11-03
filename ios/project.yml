@@ -1,0 +1,49 @@
+name: SpellingQuiz
+options:
+  deploymentTarget:
+    iOS: "17.0"
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+targets:
+  SpellingQuiz:
+    type: application
+    platform: iOS
+    sources:
+      - SpellingQuiz
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: jp.gesource.sample.spellingquiz.ios
+        MARKETING_VERSION: "1.0"
+        CURRENT_PROJECT_VERSION: "1"
+        TARGETED_DEVICE_FAMILY: "1"
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
+        INFOPLIST_KEY_UISupportedInterfaceOrientations: "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight"
+        # CocoaPods の Run Script がスクリプトサンドボックスで失敗するのを防ぐ
+        ENABLE_USER_SCRIPT_SANDBOXING: NO
+        CODE_SIGN_STYLE: Automatic
+        DEVELOPMENT_TEAM: T77QARX2F2
+  SpellingQuizTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - SpellingQuizTests
+    dependencies:
+      - target: SpellingQuiz
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: jp.gesource.sample.spellingquiz.ios.tests
+        GENERATE_INFOPLIST_FILE: YES
+        ENABLE_USER_SCRIPT_SANDBOXING: NO
+        CODE_SIGN_STYLE: Automatic
+        DEVELOPMENT_TEAM: T77QARX2F2
+schemes:
+  SpellingQuiz:
+    build:
+      targets:
+        SpellingQuiz: all
+    test:
+      targets:
+        - SpellingQuizTests

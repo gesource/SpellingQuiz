@@ -1,0 +1,562 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A6EE0DADC1D79F17F45A4FD /* SpellingQuizApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59699E90DC5E6EBE1AEBD31 /* SpellingQuizApp.swift */; };
+		0DF3F55E6A0D12553060F39F /* WordCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478ABC2A7499EC49DB32BA17 /* WordCard.swift */; };
+		0F7078DC47CF4632EAAF1A0D /* word_cards.json in Resources */ = {isa = PBXBuildFile; fileRef = 3CD30D868A69B59F8863D832 /* word_cards.json */; };
+		21D063C72478CF8C938D8D0E /* SpellingRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A24EA98577EC017D2988B1 /* SpellingRecognizer.swift */; };
+		54D33B67F273E319D7BCC0AB /* MatchesSpellingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E98EB4F20059E29C848D37 /* MatchesSpellingTests.swift */; };
+		654757818CF865A2F24817F6 /* libPods-SpellingQuizTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F63E8776B4C2B3BEEB501AB /* libPods-SpellingQuizTests.a */; };
+		672933D8F07A6EE54CCA49C2 /* libPods-SpellingQuiz.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F30907925E87AF9EE5AE1D44 /* libPods-SpellingQuiz.a */; };
+		7BBA8772CFB305D4B84E1EB7 /* SpellingQuizScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3341D2F1A30F72343257A43 /* SpellingQuizScreen.swift */; };
+		B6D6DDFECD77590F72239EAA /* HandwritingPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1476321E1A53BB94932AC78E /* HandwritingPad.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A01AA6356FC794FD068D6777 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 286DD8A0A0C561D38E868F0C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FBE47235E09A1299548F202;
+			remoteInfo = SpellingQuiz;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1476321E1A53BB94932AC78E /* HandwritingPad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandwritingPad.swift; sourceTree = "<group>"; };
+		21A24EA98577EC017D2988B1 /* SpellingRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellingRecognizer.swift; sourceTree = "<group>"; };
+		387E9269E9FBF5765003553A /* SpellingQuizTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpellingQuizTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CD30D868A69B59F8863D832 /* word_cards.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = word_cards.json; sourceTree = "<group>"; };
+		428CDB832A1954DD35D8E7FD /* Pods-SpellingQuizTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpellingQuizTests.debug.xcconfig"; path = "Target Support Files/Pods-SpellingQuizTests/Pods-SpellingQuizTests.debug.xcconfig"; sourceTree = "<group>"; };
+		478ABC2A7499EC49DB32BA17 /* WordCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCard.swift; sourceTree = "<group>"; };
+		7F63E8776B4C2B3BEEB501AB /* libPods-SpellingQuizTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SpellingQuizTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F9045F4B259A0B0AC32F8F5 /* Pods-SpellingQuiz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpellingQuiz.release.xcconfig"; path = "Target Support Files/Pods-SpellingQuiz/Pods-SpellingQuiz.release.xcconfig"; sourceTree = "<group>"; };
+		81E98EB4F20059E29C848D37 /* MatchesSpellingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesSpellingTests.swift; sourceTree = "<group>"; };
+		A1B743BF6A323394777CB862 /* Pods-SpellingQuizTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpellingQuizTests.release.xcconfig"; path = "Target Support Files/Pods-SpellingQuizTests/Pods-SpellingQuizTests.release.xcconfig"; sourceTree = "<group>"; };
+		A59699E90DC5E6EBE1AEBD31 /* SpellingQuizApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellingQuizApp.swift; sourceTree = "<group>"; };
+		A9737E25D6081787F08A8516 /* SpellingQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpellingQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F30907925E87AF9EE5AE1D44 /* libPods-SpellingQuiz.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SpellingQuiz.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3341D2F1A30F72343257A43 /* SpellingQuizScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellingQuizScreen.swift; sourceTree = "<group>"; };
+		F513E82AFDBA51DC84F77865 /* Pods-SpellingQuiz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpellingQuiz.debug.xcconfig"; path = "Target Support Files/Pods-SpellingQuiz/Pods-SpellingQuiz.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		699AAD2A2AA8383E627202DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				672933D8F07A6EE54CCA49C2 /* libPods-SpellingQuiz.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB8ECE0303EBD06A5D487AA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				654757818CF865A2F24817F6 /* libPods-SpellingQuizTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		297CAA11E582047284CEA6C3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F513E82AFDBA51DC84F77865 /* Pods-SpellingQuiz.debug.xcconfig */,
+				7F9045F4B259A0B0AC32F8F5 /* Pods-SpellingQuiz.release.xcconfig */,
+				428CDB832A1954DD35D8E7FD /* Pods-SpellingQuizTests.debug.xcconfig */,
+				A1B743BF6A323394777CB862 /* Pods-SpellingQuizTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		38E16E8ADB5DA32754E79A5C = {
+			isa = PBXGroup;
+			children = (
+				42E64F0AE284C0D50937597F /* SpellingQuiz */,
+				6EC81BFFA9B98C057182D272 /* SpellingQuizTests */,
+				9968F94253E80F91DC81CC30 /* Products */,
+				297CAA11E582047284CEA6C3 /* Pods */,
+				90554F03FE462D7AF1231427 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		42E64F0AE284C0D50937597F /* SpellingQuiz */ = {
+			isa = PBXGroup;
+			children = (
+				1476321E1A53BB94932AC78E /* HandwritingPad.swift */,
+				A59699E90DC5E6EBE1AEBD31 /* SpellingQuizApp.swift */,
+				F3341D2F1A30F72343257A43 /* SpellingQuizScreen.swift */,
+				21A24EA98577EC017D2988B1 /* SpellingRecognizer.swift */,
+				3CD30D868A69B59F8863D832 /* word_cards.json */,
+				478ABC2A7499EC49DB32BA17 /* WordCard.swift */,
+			);
+			path = SpellingQuiz;
+			sourceTree = "<group>";
+		};
+		6EC81BFFA9B98C057182D272 /* SpellingQuizTests */ = {
+			isa = PBXGroup;
+			children = (
+				81E98EB4F20059E29C848D37 /* MatchesSpellingTests.swift */,
+			);
+			path = SpellingQuizTests;
+			sourceTree = "<group>";
+		};
+		90554F03FE462D7AF1231427 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F30907925E87AF9EE5AE1D44 /* libPods-SpellingQuiz.a */,
+				7F63E8776B4C2B3BEEB501AB /* libPods-SpellingQuizTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9968F94253E80F91DC81CC30 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9737E25D6081787F08A8516 /* SpellingQuiz.app */,
+				387E9269E9FBF5765003553A /* SpellingQuizTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3FBE47235E09A1299548F202 /* SpellingQuiz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE02DCFEE1FDE475089159F3 /* Build configuration list for PBXNativeTarget "SpellingQuiz" */;
+			buildPhases = (
+				8B79110BC145E2BFD55E7760 /* [CP] Check Pods Manifest.lock */,
+				EF20DDC3481FFCC008D50CA3 /* Sources */,
+				8FBB92B0C7B9C5DC44E5632F /* Resources */,
+				699AAD2A2AA8383E627202DF /* Frameworks */,
+				ED1DCCC729745A02E498334C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpellingQuiz;
+			productName = SpellingQuiz;
+			productReference = A9737E25D6081787F08A8516 /* SpellingQuiz.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D0D4A553EBA0C12D1D15302C /* SpellingQuizTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE7D6BE8A6D2080CD2EEF41B /* Build configuration list for PBXNativeTarget "SpellingQuizTests" */;
+			buildPhases = (
+				CF8027089F6C32D5F70A1D37 /* [CP] Check Pods Manifest.lock */,
+				E77A488C77F8BEF621D267DB /* Sources */,
+				BB8ECE0303EBD06A5D487AA8 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F33CC60A85F60F2575C3EDFD /* PBXTargetDependency */,
+			);
+			name = SpellingQuizTests;
+			productName = SpellingQuizTests;
+			productReference = 387E9269E9FBF5765003553A /* SpellingQuizTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		286DD8A0A0C561D38E868F0C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					3FBE47235E09A1299548F202 = {
+						ProvisioningStyle = Automatic;
+					};
+					D0D4A553EBA0C12D1D15302C = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FDBD2E390969CA797EC236C8 /* Build configuration list for PBXProject "SpellingQuiz" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 38E16E8ADB5DA32754E79A5C;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 9968F94253E80F91DC81CC30 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3FBE47235E09A1299548F202 /* SpellingQuiz */,
+				D0D4A553EBA0C12D1D15302C /* SpellingQuizTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8FBB92B0C7B9C5DC44E5632F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F7078DC47CF4632EAAF1A0D /* word_cards.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8B79110BC145E2BFD55E7760 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpellingQuiz-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF8027089F6C32D5F70A1D37 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpellingQuizTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED1DCCC729745A02E498334C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpellingQuiz/Pods-SpellingQuiz-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpellingQuiz/Pods-SpellingQuiz-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SpellingQuiz/Pods-SpellingQuiz-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E77A488C77F8BEF621D267DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54D33B67F273E319D7BCC0AB /* MatchesSpellingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF20DDC3481FFCC008D50CA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6D6DDFECD77590F72239EAA /* HandwritingPad.swift in Sources */,
+				0A6EE0DADC1D79F17F45A4FD /* SpellingQuizApp.swift in Sources */,
+				7BBA8772CFB305D4B84E1EB7 /* SpellingQuizScreen.swift in Sources */,
+				21D063C72478CF8C938D8D0E /* SpellingRecognizer.swift in Sources */,
+				0DF3F55E6A0D12553060F39F /* WordCard.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F33CC60A85F60F2575C3EDFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FBE47235E09A1299548F202 /* SpellingQuiz */;
+			targetProxy = A01AA6356FC794FD068D6777 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5030DDFD1968D6F19B9A5534 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		57C770C09C7B357694C61F44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F9045F4B259A0B0AC32F8F5 /* Pods-SpellingQuiz.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2XSANXPVH5;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.gesource.sample.spellingquiz.ios;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		BED2B9B63A9239D881A14CB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F513E82AFDBA51DC84F77865 /* Pods-SpellingQuiz.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2XSANXPVH5;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.gesource.sample.spellingquiz.ios;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		BEE93BFEB9D94F1A4EF1F9C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		C6F19304164A310D50768272 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1B743BF6A323394777CB862 /* Pods-SpellingQuizTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2XSANXPVH5;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.gesource.sample.spellingquiz.ios.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpellingQuiz.app/SpellingQuiz";
+			};
+			name = Release;
+		};
+		FE4379A5C90EEB676D4AE99B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 428CDB832A1954DD35D8E7FD /* Pods-SpellingQuizTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2XSANXPVH5;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.gesource.sample.spellingquiz.ios.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpellingQuiz.app/SpellingQuiz";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FDBD2E390969CA797EC236C8 /* Build configuration list for PBXProject "SpellingQuiz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEE93BFEB9D94F1A4EF1F9C6 /* Debug */,
+				5030DDFD1968D6F19B9A5534 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FE02DCFEE1FDE475089159F3 /* Build configuration list for PBXNativeTarget "SpellingQuiz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BED2B9B63A9239D881A14CB8 /* Debug */,
+				57C770C09C7B357694C61F44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FE7D6BE8A6D2080CD2EEF41B /* Build configuration list for PBXNativeTarget "SpellingQuizTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE4379A5C90EEB676D4AE99B /* Debug */,
+				C6F19304164A310D50768272 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 286DD8A0A0C561D38E868F0C /* Project object */;
+}

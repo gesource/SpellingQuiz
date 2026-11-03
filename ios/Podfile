@@ -1,0 +1,18 @@
+platform :ios, '17.0'
+
+target 'SpellingQuiz' do
+  pod 'GoogleMLKit/DigitalInkRecognition', '9.0.0'
+
+  target 'SpellingQuizTests' do
+    inherit! :search_paths
+  end
+end
+
+# 依存 pod の deployment target（9.0〜12.0）は Xcode 27 の下限 15.0 を下回りビルドエラーになるため、アプリと同じ 17.0 に揃える
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '17.0'
+    end
+  end
+end
